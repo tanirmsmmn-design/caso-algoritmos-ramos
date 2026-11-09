@@ -1,0 +1,21 @@
+codigo,producto,categoria,precio_bs,stock
+7770001000015,Arroz grano de oro 1 kg,Abarrotes,9.50,120
+7770001000022,Azúcar 1 kg,Abarrotes,7.80,95
+7770001000039,Aceite vegetal 900 ml,Abarrotes,16.00,60
+7770001000046,Fideo tallarín 400 g,Abarrotes,5.50,140
+7770001000053,Harina de trigo 1 kg,Abarrotes,8.20,75
+7770002000012,Leche entera 1 L,Lácteos,8.00,48
+7770002000029,Yogur frutilla 1 L,Lácteos,14.50,30
+7770002000036,Queso criollo 500 g,Lácteos,28.00,18
+7770003000019,Gaseosa cola 2 L,Bebidas,13.00,85
+7770003000026,Agua mineral 2 L,Bebidas,7.00,110
+7770003000033,Jugo de naranja 1 L,Bebidas,12.50,40
+7770004000016,Galletas de agua 200 g,Snacks,4.50,200
+7770004000023,Papas fritas 150 g,Snacks,10.00,65
+7770004000030,Chocolate en barra 100 g,Snacks,9.00,90
+7770005000013,Detergente en polvo 1 kg,Limpieza,22.00,45
+7770005000020,Lavandina 1 L,Limpieza,6.50,70
+7770005000037,Jabón de tocador,Limpieza,3.50,150
+7770006000010,Cuaderno universitario 100 h,Papelería,12.00,55
+7770006000027,Bolígrafo azul,Papelería,1.50,300
+7770006000034,Lápiz HB,Papelería,1.00,250
