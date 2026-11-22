@@ -13,8 +13,9 @@ Medido en Python, en mi computadora. 1.000.000 datos ordenados, 1.000 consultas.
 
 **Cociente (lineal / binaria):** x13042
 
-## Mi proceso (inventario)
+## Justificación aplicada a mi proceso (Inventario)
 
-Sí conviene ordenar primero. Mi inventario (unos 1.500 productos, unas 80 consultas por día) se busca muchas veces sobre los mismos datos, y ordenar cuesta una sola vez, mientras que mi tabla muestra que la binaria fue ×13.042 más rápida que la lineal.
+En mi caso de inventario (aproximadamente 1.500 productos y 80 consultas diarias), sí conviene mantener los datos ordenados y usar búsqueda binaria cuando se realizan búsquedas repetidas sobre el catálogo, ya que el ordenamiento se realiza una vez o al actualizar los datos y luego las consultas son mucho más ágiles. En volúmenes grandes, la diferencia es considerable, como se demostró en mi prueba con 1.000.000 de datos, donde la búsqueda binaria fue x13042 más rápida en tiempo promedio.
 
-La binaria solo funciona con datos ordenados; si entran productos nuevos, hay que volver a ordenar, y con pocos cambios por día ese costo es pequeño.
+Sin embargo, la búsqueda binaria exige que los datos estén ordenados. Si ingresan productos nuevos, hay que reordenar los datos o insertarlos manteniendo el orden. Si tuviera que elegir entre burbuja e inserción para ordenar, preferiría inserción porque suele requerir menos operaciones en conjuntos pequeños o parcialmente ordenados. En cambio, para volúmenes muy altos, ambos métodos cuadráticos resultan costosos.
+
