@@ -15,7 +15,7 @@ Medido en Python, en mi computadora. 1.000.000 datos ordenados, 1.000 consultas.
 
 ## Justificación aplicada a mi proceso (Inventario)
 
-En mi caso de inventario (aproximadamente 1.500 productos y 80 consultas diarias), sí conviene mantener los datos ordenados y usar búsqueda binaria cuando se realizan búsquedas repetidas sobre el catálogo, ya que el ordenamiento se realiza una vez o al actualizar los datos y luego las consultas son mucho más ágiles. En volúmenes grandes, la diferencia es considerable, como se demostró en mi prueba con 1.000.000 de datos, donde la búsqueda binaria fue x13042 más rápida en tiempo promedio.
+**¿Conviene ordenar primero? Sí, con una advertencia.** Mi inventario tiene unos 1.500 productos y se consulta unas 80 veces al día sobre los mismos datos. Ordenar una sola vez y usar binaria baja cada consulta de hasta 1.500 comparaciones a unos 11 pasos, y con 1.000.000 de datos la binaria fue x13042 más rápida (3,178 ms contra 41.443 ms en 1.000 consultas). Con solo 1.500 productos la diferencia en segundos es pequeña, pero crece si el inventario crece.
 
-Sin embargo, la búsqueda binaria exige que los datos estén ordenados. Si ingresan productos nuevos, hay que reordenar los datos o insertarlos manteniendo el orden. Si tuviera que elegir entre burbuja e inserción para ordenar, preferiría inserción porque suele requerir menos operaciones en conjuntos pequeños o parcialmente ordenados. En cambio, para volúmenes muy altos, ambos métodos cuadráticos resultan costosos.
+**Costo y límite:** la binaria exige datos ordenados, y ordenar cuesta (esta tabla no lo incluye porque se paga una sola vez). Si entran productos nuevos hay que reordenar o insertarlos en su lugar. Para ordenar elegiría inserción y no burbuja, porque con datos casi ordenados (el inventario más unos pocos productos nuevos) hace pocas operaciones, como medí en c6.
 
